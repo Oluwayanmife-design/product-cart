@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="assets/images/favicon-32x32.png"
+    />
+    <script
+      src="https://kit.fontawesome.com/11ffb3b2e3.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Red+Hat+Text:ital,wght@0,300..700;1,300..700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+    <title>Frontend Mentor | Product list with cart</title>
+    <link
+      href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css"
+      rel="stylesheet"
+    />
+  </head>
+  <body class="p-10 max-w-[90vw] m-auto w-[1300px] bg-[#FCF8F5] ">
+    <div>
+      <div class="flex justify-around ">
+        <div class="container  ">
+          <h1 class="text-black text-4xl font-extrabold ">Desserts</h1>
+          <div id="product-list" class="grid grid-cols-3 py-6 w-[700px] gap-6  ">
+            <!-- Products will be dynamically added here -->
+          </div>
+        </div>
+        <aside class="bg-white  p-5 text-black  h-[800px]  ">
+            <h1 class="text-xl font-extrabold text-[#C83C0E] ">
+              Your Cart <span class="icon-Cart">(0)</span>
+            </h1>
+      
+          <div class="listCart  flex flex-col gap-5 mt-10  ">
+            <!-- Cart items will be dynamically added here -->
+          </div>
+          <div class="totalPrice2 text-xl font-extrabold text-[#C83C0E] mt-5"></div> 
+            <button class="btn-confirm bg-[#C83C0E] p-4 mt-10 w-[400px] rounded-3xl text-white font-medium border-none">
+              Confirm Order
+            </button> 
+            
+
+        </aside>
+      </div>
+    </div>
+<div class="modal hidden auto text-center py-8">
+      <i class="fa-regular fa-circle-check text-green-600 text-4xl"></i>
+      <h1 class="text-4xl font-semibold">Order confirmed</h1>
+      <p class="text-[#a8a2a0] text-[16px]">we hope you enjoy your food!</p> 
+    </div>
+    
+    <script src="index.js"></script>
+  </body>
+</html>
